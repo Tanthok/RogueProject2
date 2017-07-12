@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.gsu.httpscs.rogueproject.SharedPreferenceActivity">
+
+    <!--Also have the original teacher's Layout in a Text file on my Surface Pro-->
+    <!--Start Of Email-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"/>
+    <EditText
+        android:id="@+id/activity_sharedpreference_email"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+    <!--End of Email -->
+    <!--Start of Password-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Password"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/activity_sharedpreference_password"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/activity_sharedpreference_login"
+        android:layout_width="match_parent"
+        android:text="Login"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/activity_sharedpreference_clear"
+        android:layout_width="match_parent"
+        android:text="Clear Catch"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/activity_sharedpreference_register"
+        android:layout_width="match_parent"
+        android:text="Register"
+        android:layout_height="wrap_content" />
+</LinearLayout>

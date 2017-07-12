@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="edu.gsu.httpscs.rogueproject.MainActivity">
+    <!--Title bar -->
+    <RelativeLayout
+        android:id="@+id/activity_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@android:color/holo_orange_light"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="24sp"/>
+        <!--Top Left Orange Button-->
+        <Button
+            android:text="T"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/bt_bg"
+            android:layout_alignParentLeft="true"/>
+        <!--Top Right Green Button-->
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:onClick="login"
+            android:background="@drawable/bt_icon_bg"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+<!--Bottom Set up-->
+    <LinearLayout
+        android:id="@+id/activity_main_tool"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <!--Buttom Buttons-->
+        <!--Demo Button-->
+        <TextView
+            android:id="@+id/activity_tool_demo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="Demo"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@android:color/holo_red_light"/>
+        <!--Work Button-->
+        <TextView
+            android:id="@+id/activity_tool_work"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="Work"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@android:color/black"/>
+        <!--Work Button-->
+        <TextView
+            android:id="@+id/activity_tool_sub"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="Subtlety"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@android:color/black"/>
+        <!--Middle Area-->
+        <!--Add Legion Picture Here-->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.05"
+            android:background="@android:color/darker_gray"></View>
+    </LinearLayout>
+    <!--Below-Orinentation and Id added with Fragment-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/activity_main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_main_title"
+        android:layout_above="@id/activity_main_tool"
+        android:background="@android:color/darker_gray"
+        ></LinearLayout>
+</RelativeLayout>

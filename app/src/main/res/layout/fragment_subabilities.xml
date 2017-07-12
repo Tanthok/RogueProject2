@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.gsu.httpscs.rogueproject.fragment.SubAbilitiesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subtlety Abilities"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center|top"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/symbolsofdeath"
+        android:layout_gravity="start"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:paddingTop="1sp"
+        android:text="Symbols of Death: Increases all damage you deal by 25% and generates 40 energy over the duration of 10 seconds." />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/shadowdance"
+        android:layout_gravity="start"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="1sp"
+        android:text="Shadow Dance: Allows the user to use all abilities and passives that requires the stance Stealth. This effect lasts for 3 seconds and has 2 charges." />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/backstab"
+        android:layout_gravity="start"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="1sp"
+        android:text="Backstab: Main combo point builder. This is replaced by Gloomblade if talented." />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/evicerate"
+        android:layout_gravity="start"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="1sp"
+        android:text="Eviscerate: Finishing move which deals physical damage. Damage is increased per combo point spent." />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/nightblade"
+        android:layout_gravity="start"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="1sp"
+        android:text="Nightblade: Finishing move which deals bleed damage over time, slows the target for 50% during its duration, and increases the damage you deal to the target with the debuff by 15%. Damage and duration are increased per combo point spent." />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/shadowstrike"
+        android:layout_gravity="start"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="1sp"
+        android:text="Shadowstrike: Strike through the shadows, appearing behind your target and dealing physical damage. This ability teleports you to your target’s location." />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/deepeningshadows"
+        android:layout_gravity="start"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="1sp"
+        android:text="Deepening Shadows: Your finishing moves reduce the remaining cooldown on Shadow Dance by 2.5 seconds per combo point spent." />
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@mipmap/shadowtech"-->
+        <!--android:layout_gravity="start"-->
+        <!--android:layout_alignParentLeft="true"/>-->
+    <!--<TextView-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Shadow Techniques: your auto attacks have a chance to generate a combo point." />-->
+</LinearLayout>

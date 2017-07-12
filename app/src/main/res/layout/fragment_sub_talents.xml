@@ -1,0 +1,163 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.gsu.httpscs.rogueproject.fragment.SubTalentsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Subtlety Talents"
+        android:layout_gravity="center"
+        android:gravity="center|top"
+        android:textSize="29sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:src="@mipmap/t15s" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:src="@mipmap/t30s" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5sp"
+        android:layout_marginLeft="5sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:text="@string/master_of_subtlety" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/weaponmaster"
+            android:textSize="11sp"
+            android:paddingTop="4sp"
+            android:textStyle="bold"
+            android:layout_marginTop="100dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gloomblade"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:layout_marginTop="120dp"
+            />
+
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nightstalker"
+            android:textSize="11sp"
+            android:layout_marginTop="190dp" />
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/subterfuge"
+            android:textSize="11sp"
+            android:layout_marginTop="218dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shadow_focus"
+            android:textSize="11sp"
+            android:paddingTop="1sp"
+            android:textStyle="bold"
+            android:layout_marginTop="242dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="582dp"
+        android:src="@mipmap/t90s"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5sp"
+        android:layout_marginLeft="5sp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dark_shadows"
+            android:textSize="11sp"
+            android:paddingTop="1dp"
+            android:textStyle="bold"
+            android:layout_marginTop="310dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alacrity"
+            android:textSize="11sp"
+            android:paddingTop="3sp"
+            android:textStyle="bold"
+            android:layout_marginTop="335dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enveloping_shadows"
+            android:textSize="11sp"
+            android:paddingTop="4sp"
+            android:textStyle="bold"
+            android:layout_marginTop="360dp"/>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="860dp"
+        android:src="@mipmap/tier100"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5sp"
+        android:layout_marginLeft="5sp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/master_of_shadows"
+                android:textSize="11sp"
+                android:paddingTop="4sp"
+                android:textStyle="bold"
+                android:layout_marginTop="450dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mark_of_death"
+                android:textSize="11sp"
+                android:paddingTop="4sp"
+                android:textStyle="bold"
+                android:layout_marginTop="474dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/death_from_above"
+                android:textSize="11sp"
+                android:paddingTop="4sp"
+                android:textStyle="bold"
+
+                android:layout_marginTop="500dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|center"
+        android:gravity="bottom|center"
+        android:paddingBottom="25sp"
+        android:text="These do NOT INCLUDE utility talents."
+        android:textColor="@color/red"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+</FrameLayout>

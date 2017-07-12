@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="edu.gsu.httpscs.rogueproject.fragment.OrangeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Here is your Current Stat Weight's Specialization Outlaw."
+        android:textSize="23sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Agility = 21.98"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="160sp"
+        android:gravity="center|bottom"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="center|bottom"
+        android:layout_marginBottom="140sp"
+        android:text="Versatility = 16.02"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="center|bottom"
+        android:layout_marginBottom="120sp"
+        android:text="Haste = 13.96"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="center|bottom"
+        android:layout_marginBottom="100sp"
+        android:text="Mastery = 12.77"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="center|bottom"
+        android:layout_marginBottom="80sp"
+        android:text="Critical Strike =  9.29"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="center|bottom"
+        android:layout_marginBottom="20sp"
+        android:text="You can Swipe Left or Right to find your Specialization"/>
+</FrameLayout>
+    <!--Outlaw-->
+    <!--Agility = 21.98-->
+    <!--Critical Strike =  9.29-->
+    <!--Haste = 13.96-->
+    <!--Mastery = 12.77-->
+    <!--Versatility = 16.02-->

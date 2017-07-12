@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:background="@android:color/black"
+    android:layout_height="460dp">
+
+    <!--Title on the Top, use a TextView-->
+    <TextView
+        android:id="@+id/dialog_custom_tv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/white"
+        android:text="Well?"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:gravity="center"
+        />
+    <RadioGroup
+        android:id="@+id/dialog_quiz3_rdg"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <!--End of the To Title-->
+        <RadioButton
+            android:id="@+id/dialog_custom_rb1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="yes"/>
+        <RadioButton
+            android:id="@+id/dialog_custom_rb2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="No"/>
+        <RadioButton
+            android:id="@+id/dialog_custom_rb3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Exit"/>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/dialog_quiz3_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:text="OK"/>
+        <Button
+            android:id="@+id/dialog_quiz3_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:text="Cancel"/>
+    </LinearLayout>
+
+</LinearLayout>

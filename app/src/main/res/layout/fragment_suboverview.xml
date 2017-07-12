@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.gsu.httpscs.rogueproject.fragment.SubOverviewFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Subtlety Overview"
+        android:layout_gravity="center"
+        android:gravity="center|top"
+        android:textSize="28sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:paddingTop="2sp"/>
+    <TextView
+        android:paddingTop="50dp"
+        android:layout_marginTop="26sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/subtlety_overview_string"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+</FrameLayout>

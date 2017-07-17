@@ -1,16 +1,23 @@
 package edu.gsu.httpscs.rogueproject;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import butterknife.ButterKnife;
 import butterknife.OnClick;
+import edu.gsu.httpscs.rogueproject.dialog.CustomDialog2;
 
 public class RegisterActivity extends BaseActivity {
 
-
-    //@OnClick(R.id.activity_quiz3_quiz1bt)
-    public void ok(View v) {
+    @OnClick(R.id.activity_register_create)
+    public void create(View v){
+        shortToast("You have Registered your Account!");
+        gotoActivity(SharedPreferenceActivity.class);
+    }
+    @OnClick(R.id.activity_register_gender)
+    public void register(View v) {
 
         CustomDialog2 customDialog =
                 new CustomDialog2(this, new CustomDialog2.ICustomDialongListener() {
@@ -28,5 +35,6 @@ public class RegisterActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+        ButterKnife.bind(this);
     }
 }

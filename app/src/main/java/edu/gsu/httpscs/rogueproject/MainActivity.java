@@ -2,21 +2,28 @@ package edu.gsu.httpscs.rogueproject;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import butterknife.OnClick;
 import edu.gsu.httpscs.rogueproject.fragment.DemoFragment;
 import edu.gsu.httpscs.rogueproject.fragment.SubOverviewFragment;
 import edu.gsu.httpscs.rogueproject.fragment.WorkFragment;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     private TextView tv_demo;
     private TextView tv_work;
     private TextView tv_sub;
+    private Handler mHandler = new Handler();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +31,26 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         initialView();
         setListener();
+
+        //Button Animation
+        final Animation animTranslate = AnimationUtils.loadAnimation(this, R.anim.anim_trans);
+        Button btTranslate = (Button) findViewById(R.id.activity_main_login);
+        btTranslate.setOnClickListener(new View.OnClickListener() {
+        //handler delay
+
+            @Override
+            public void onClick(View v) {
+                v.startAnimation(animTranslate);
+                shortToast("Register Your Account");
+                mHandler.postDelayed(new Runnable() {
+
+                    @Override
+                    public void run() {
+                        gotoActivity(SharedPreferenceActivity.class);
+                    }
+                },1000);
+            }
+        });
     }
 
     private void initialView() {
@@ -77,8 +104,19 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void login(View v){
-        Toast.makeText(MainActivity.this,"You have Clicked Login",Toast.LENGTH_SHORT).show();
-        Intent startNewActivity = new Intent(this, SharedPreferenceActivity.class);
-        startActivity(startNewActivity);
+//        Toast.makeText(MainActivity.this,"You have Clicked Login",Toast.LENGTH_SHORT).show();
+//        Intent startNewActivity = new Intent(this, SharedPreferenceActivity.class);
+//        startActivity(startNewActivity);
+
+//        transAnimation= AnimationUtils.loadAnimation(this, R.anim.anim_trans);
+//        //Button Animation
+//        final Animation animTranslate = AnimationUtils.loadAnimation(this, R.anim.anim_trans);
+//        Button btTranslate = (Button) findViewById(R.id.activity_main_login);
+//        btTranslate.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                v.startAnimation(animTranslate);
+//            }
+//        });
     }
 }

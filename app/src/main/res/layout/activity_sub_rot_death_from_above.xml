@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+
     tools:context="edu.gsu.httpscs.rogueproject.SubRotDeathFromAboveActivity">
 
     <TextView
@@ -12,33 +14,14 @@
         android:text="Subtlety Death from Above And with Dark Shadow Rotation"
         android:layout_gravity="center|top"
         android:gravity="center|top"
+        android:textColor="@color/white"
         android:textSize="21sp"
         android:textStyle="bold" />
-    <TextView
+
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="55dp"
-        android:text="Abillity Priority List from Most Important to Least Important"
-        android:gravity="center|top"/>
-    <!--<Button-->
-    <!--android:layout_width="45dp"-->
-    <!--android:layout_height="50dp"-->
-    <!--android:text="HE"-->
-    <!--android:gravity="center|top"/>-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="80dp"
-        android:gravity="top|center"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TESTING"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TESTING"/>
-    </LinearLayout>
+        android:layout_height="400dp"
+        android:src="@mipmap/talentdfarotation"/>
+
 
 </RelativeLayout>

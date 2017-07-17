@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background=""
+    android:background="@color/colorPrimaryDark"
     tools:context="edu.gsu.httpscs.rogueproject.SubRotSingleTargetActivity">
 
     <TextView
@@ -12,38 +12,15 @@
         android:layout_height="match_parent"
         android:text="Subtlety Single Target Rotation"
         android:layout_gravity="center|top"
+        android:textColor="@color/white"
         android:gravity="center|top"
         android:textSize="29sp"
         android:textStyle="bold" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="50dp"
-        android:text="Abillity Priority List from Most Important to Least Important"
-        android:gravity="center|top"/>
+
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_height="320dp"
         android:src="@mipmap/singletargetrotation"/>
-        <!--<Button-->
-            <!--android:layout_width="45dp"-->
-            <!--android:layout_height="50dp"-->
-            <!--android:text="HE"-->
-            <!--android:gravity="center|top"/>-->
-    <!--<LinearLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:paddingTop="80dp"-->
-        <!--android:gravity="top|center"-->
-        <!--android:orientation="vertical">-->
-    <!--<TextView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="TESTING"/>-->
-        <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="TESTING"/>-->
-    <!--</LinearLayout>-->
+
 
 </RelativeLayout>

@@ -1,4 +1,5 @@
-package edu.gsu.httpscs.rogueproject;
+package edu.gsu.httpscs.rogueproject.dialog;
+
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
@@ -42,11 +43,11 @@ public class CustomDialog2 extends Dialog{
     public void ok(View v) {
         switch (checkedID) {
             case R.id.dialog_custom_rb1:
-                listener.onOKClicked("You clicked yes");
+                listener.onOKClicked("You clicked Male");
                 cancel();
                 break;
             case R.id.dialog_custom_rb2:
-                listener.onOKClicked("You clicked no");
+                listener.onOKClicked("You clicked Female");
                 cancel();
                 break;
             case R.id.dialog_custom_rb3:

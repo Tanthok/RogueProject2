@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@android:color/white"
-        android:text="Well?"
+        android:text="Select Your Gender"
         android:textColor="@android:color/black"
         android:textSize="30sp"
         android:gravity="center"
@@ -26,13 +26,13 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="yes"/>
+            android:text="Male"/>
         <RadioButton
             android:id="@+id/dialog_custom_rb2"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="No"/>
+            android:text="Female"/>
         <RadioButton
             android:id="@+id/dialog_custom_rb3"
             android:layout_width="match_parent"
